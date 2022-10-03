@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 8 hw cat</title>
+</head>
+
+<body>
+	<header class="header"></header>
+	<main class="main">
+		<div id="burger-open"></div>
+		<div id="burger-close"></div>
+		<div id="section-1" class="page-anchor"></div>
+
+		<!-- ----------------------section-1 ----------------------------->
+		<div class="section-1 section">
+			<div class="section-1__btn">
+				<a href="#burger-open" class="open"></a>
+				<a href="#burger-close" class="close"></a>
+			</div>
+			<ul class="section-1__menu">
+				<li><span>Пункт 1</span></li>
+				<li><span>Пункт 2</span></li>
+				<li><span>Пункт 3</span></li>
+				<li><span>Пункт 4</span></li>
+				<li><span>Пункт 5</span></li>
+				<li>Это бутафорные ссылки (не ссылки вовсе)</li>
+			</ul>
+			<div class="section__content">
+				<p>Типа бургер</p>
+				<p>Нет скрола owerflow: hidden; </p>
+				<p>Но, есть скрол, если внутри этого блока</p>
+				<a href="#section-2" class="next-page">Следующий слайд</a>
+			</div>
+		</div>
+
+		<!-- ----------------------section-2 ----------------------------->
+		<div id="tab-1"></div>
+		<div id="tab-2"></div>
+		<div id="tab-3"></div>
+		<div id="section-2" class="page-anchor"></div>
+		<div class="section-2 section">
+			<div class="section-2__btn-block">
+				<a href="#tab-1" class="section-2__btn">1</a>
+				<a href="#tab-2" class="section-2__btn">2</a>
+				<a href="#tab-3" class="section-2__btn">3</a>
+			</div>
+			<div class="section__content-block">
+				<div class="section-2__content">
+					<p>Первый блок</p>
+					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, explicabo vel.</span>
+				</div>
+				<div class="section-2__content">
+					<p>Второй блок</p>
+					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, explicabo vel.</span>
+				</div>
+				<div class="section-2__content">
+					<p>Третий блок</p>
+					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, explicabo vel.</span>
+				</div>
+			</div>
+			<div class="section__content">
+				<p>Типа табы</p>
+				<a class="remove" href="#section-2">Сбросить табы</a>
+				<a href="#section-1" class="prev-page">Предыдущий слайд</a>
+				<a href="#section-3" class="next-page">Следующий слайд</a>
+			</div>
+		</div>
+
+		<!-- ----------------------section-3 ----------------------------->
+		<div id="spoller-1"></div>
+		<div id="spoller-2"></div>
+		<div id="spoller-3"></div>
+		<div id="spoller-4"></div>
+		<div id="section-3" class="page-anchor"></div>
+		<div class="section-3 section">
+			<div class="section-3__btn-block">
+				<a href="#spoller-1" class="section-3__link">Первая кнопка</a>
+				<div class="section-3__spoller">Первый спойлер</div>
+				<a href="#spoller-2" class="section-3__link">Вторая кнопка</a>
+				<div class="section-3__spoller">Второй спойлер</div>
+				<a href="#spoller-3" class="section-3__link">Третяя кнопка</a>
+				<div class="section-3__spoller">Третий спойлер</div>
+				<a href="#spoller-4" class="section-3__link">Четвертая кнопка</a>
+				<div class="section-3__spoller">Четвертый спойлер</div>
+			</div>
+			<div class="section__content">
+				<p>
+					<a class="remove" href="#section-3">Сбросить спойлеры</a>
+				</p>
+				<p>
+					Ну а тут будут спойлеры. Правда работают только как аккордеон.
+				</p>
+				<a class="prev-page" href="#section-2">Предыдущий слайд</a>
+				<a class="next-page" href="#wrapper">Следующий слайд</a>
+			</div>
+		</div>
+
+		<!-- ----------------------section-4 ----------------------------->
+		<div class="wrapper" id="wrapper">
+			<div class="container">
+				<p>
+					Может быть ты хочешь вернуться? Вот тебе меню. Но ты же понимаешь, что если ты перейдешь на бургер, то
+					придеться жмякать на кнопки, чтобы вернуться сюда?
+				</p>
+				<div class="nav-section">
+					<p></p>
+					<div class="nav-section__item">
+						<div class="nav-section__link">
+							<a href="#section-1">Вернуться в бургер</a>
+						</div>
+						<div class="nav-section__link">
+							<a href="#section-1"><img src="img/01.png" alt="Вернуться в бургер"></a>
+						</div>
+					</div>
+				</div>
+				<div class="nav-section">
+					<p></p>
+					<div class="nav-section__item">
+						<div class="nav-section__link">
+							<a href="#section-2">Вернуться к табам</a>
+						</div>
+						<div class="nav-section__link">
+							<a href="#section-2"><img src="img/02.png" alt="Вернуться в бургер"></a>
+						</div>
+					</div>
+				</div>
+				<div class="nav-section">
+					<p></p>
+					<div class="nav-section__item">
+						<div class="nav-section__link">
+							<a href="#section-3">Вернуться к спойлерам</a>
+						</div>
+						<div class="nav-section__link">
+							<a href="#section-3"><img src="img/03.png" alt="Вернуться в бургер"></a>
+						</div>
+					</div>
+				</div>
+				<div class="hover-section">
+					<p>
+						<span>hover</span> достаточно интересное свойство. И поэтому оно чаще всего используется при создании
+						сайтов.
+					</p>
+					<div class="hover-section__block">
+						<p>
+							Без hover, короче, никуда..
+						</p>
+						<p>
+							Сделать ссылку, которая исчезает при наведении? Пожалуйста.
+						</p>
+						<p>
+							Эта ссылка исчезает, т.к. мы делаем opacity:0; Но она из-за этого остается кликабельной.
+						</p>
+						<div class="hover-section__link-1 hover-section__link">
+							<a>Без href, что бы не прыгал экран</a>
+						</div>
+					</div>
+					<div class="hover-section__block">
+						<p>
+							Попробуем сделать ей visibility: hidden;
+						</p>
+						<div class="hover-section__link-2 hover-section__link">
+							<a>Без href, что бы не прыгал экран</a>
+						</div>
+						<p>
+							Получилось как-то плохо.
+						</p>
+					</div>
+					<div class="hover-section__block">
+						<p>
+							Сделаем hover на родителя ссылки, а самой ссылке уже visability: hidden;
+							Т.е. мы слушаем родителя. Когда на него наводят, ссылка делается visability: hidden;
+						</p>
+						<div class="hover-section__link-3 hover-section__link">
+							<a>Без href, что бы не прыгал экран</a>
+						</div>
+						<p>
+							Норм
+						</p>
+					</div>
+					<p>Попробуем увеличить размер блока с выводом текста</p>
+					<div class="hover-section__item">
+						<p>Увеличил</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer"></footer>
+</body>
+
+</html>
